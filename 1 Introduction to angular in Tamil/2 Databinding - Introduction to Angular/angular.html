@@ -1,0 +1,15 @@
+<!doctype html>
+<html ng-app>
+
+<head>
+    <title>My Angular App</title>
+    <script src="../../libs/angular.min.1.5.6.js"></script>
+</head>
+
+<body>
+    <input type="text" placeholder="Enter the value" ng-model="name"></input>
+    <h1 ng-show=name>Hello {{name}} !</h1>
+    <h1 ng-show=!name> Hello World !</h1>
+</body>
+
+</html>

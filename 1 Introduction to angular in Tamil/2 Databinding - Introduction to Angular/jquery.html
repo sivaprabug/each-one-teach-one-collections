@@ -1,0 +1,24 @@
+<!doctype html>
+<html ng-app>
+
+<head>
+    <title>My Angular App</title>
+    <script src="../../libs/jquery-1.12.4.js"></script>
+    <script>
+    $(document).ready(function($) {
+        var inputName = $('#inputName');
+        var outputArea = $('#outputArea');
+
+        inputName.keyup(function(event) {
+            outputArea.text('Hello ' + inputName.val());
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <input type="text" id="inputName" placeholder="Enter the value"></input>
+    <h1 id="outputArea"> Hello World !</h1>
+</body>
+
+</html>
