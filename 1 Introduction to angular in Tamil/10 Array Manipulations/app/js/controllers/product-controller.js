@@ -29,10 +29,12 @@ app.controller("productController", ['$scope', function($scope) {
     };
 
     $scope.removeItemFromCart = function(itemIndex) {
-        // var disable;
+        // console.info('itemIndex', itemIndex);
         $scope.cart[itemIndex].disable = false;
+        console.log('$scope.cart', $scope.cart);
         $scope.cart.splice(itemIndex, 1);
-        console.log('itemIndex', itemIndex);
+        console.info('$scope.cart', $scope.cart);
+
     };
 
     $scope.getTotal = function() {
