@@ -11,5 +11,10 @@
 ### Using Angular-cli we can create a module
 
 - ng g module new-module
-- After creation there are 5 files
- -
+- After creation there are 4 files
+ - Each module have 4 files
+ 	- TypeScript file => .ts
+ 	- HTML File => .html
+ 	- CSS File => .css
+ 	- Unit Test => .spec.ts
+
