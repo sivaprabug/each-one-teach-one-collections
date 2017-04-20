@@ -1,4 +1,4 @@
-# 06 URL Routing
+# URL Routing
 
 - Here we looking for routing concepts
 - How to create a component via terminal
