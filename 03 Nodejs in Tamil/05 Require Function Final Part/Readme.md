@@ -53,3 +53,5 @@ var filteredArray = _.uniq(unFilteredArray);
 console.log(filteredArray);
 ```
 - lot of functionalities in lodash verify the [lodash website](https://lodash.com/docs/4.17.4)
+
+- Underscorejs and lodash all same some features missing in underscorejs
