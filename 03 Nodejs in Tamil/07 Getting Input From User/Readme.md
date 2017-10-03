@@ -1,11 +1,19 @@
-console.log("Each one teach one");
+# 03 Node JS in Tamil - 07 Getting Input From User
 
-const fs = require("fs");
 
-const _ = require("lodash");
+Using Parameters
 
-const notes = require("./notes.js");
+ node index.js list
+ node index.js read
+ node index.js create
+ node index.js remove
 
+
+ node index.js remove --title="Note 1"
+
+
+
+```javascript
 console.log(process.argv[2]);
 console.log(process.argv);
 
@@ -22,3 +30,4 @@ if (command === "list") {
 } else {
     console.log("Command not found");
 }
+```
