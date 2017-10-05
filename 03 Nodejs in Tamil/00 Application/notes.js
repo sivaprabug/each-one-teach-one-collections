@@ -1,6 +1,22 @@
-console.log("Notes Started");
+var createNote = (title, body) => {
+    console.log("Note created", title, body);
+}
 
-module.exports.addNote = () => {
-    console.log('Add note called');
-    return "New Note Created";
+var listAllNote = () => {
+    console.log('List all notes');
+}
+
+var readNote = (title) => {
+    console.log("Read Note", title);
+}
+
+var removeNote = (title) => {
+    console.log("Remove note", title);
+}
+
+module.exports = {
+    createNote : createNote, // key and value same means no need to given both in ES6
+    listAllNote,
+    readNote,
+    removeNote
 }

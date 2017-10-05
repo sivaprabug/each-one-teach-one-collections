@@ -1,24 +1,22 @@
-console.log("Each one teach one");
-
 const fs = require("fs");
 
 const _ = require("lodash");
+const yargs = require('yargs');
 
 const notes = require("./notes.js");
 
-console.log(process.argv[2]);
-console.log(process.argv);
-
-var command = process.argv[2];
+var argv = yargs.argv;
+console.log(argv);
+var command = argv._[0];
 
 if (command === "list") {
-    console.log("List all Notes");
+    notes.listAllNote();
 } else if (command === "read") {
-    console.log("Read Note");
+    notes.readNote(argv.title);
 } else if (command === "create") {
-    console.log("Note Created");
+    notes.createNote(argv.title, argv.body);
 } else if (command === "remove") {
-    console.log("Note Removed");
+    notes.removeNote(argv.title);
 } else {
     console.log("Command not found");
 }
